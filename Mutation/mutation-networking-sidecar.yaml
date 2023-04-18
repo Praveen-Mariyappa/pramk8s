@@ -18,5 +18,5 @@ spec:
       value:
         name: "networking"
         imagePullPolicy: Always
-        image: quay.io/foo/bar:latest
+        image: docker.io/centos
         command: ["/bin/bash", "-c", "sleep INF"]
