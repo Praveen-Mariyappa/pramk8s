@@ -5,7 +5,11 @@ metadata:
 spec:
   match:
     scope: Namespaced
+    name: nginx-*
+    kinds:
+    - apiGroups: ["*"]
+      kinds: ["Pod"]
   location: "metadata.annotations.owner"
   parameters:
     assign:
-      value: "admin"
+      value:  "admin"
