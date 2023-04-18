@@ -13,7 +13,7 @@ spec:
     - apiGroups: ["*"]
       kinds: ["Pod"]
     namespaces: ["unprivileged"] # Applying the rule to "unprivileged" namespace for all pods
-  location: "spec.containers[name: *].securityContext.privileged"
+  location: "spec.containers[name:*].securityContext.privileged"
   parameters:
     assign:
       value: false
